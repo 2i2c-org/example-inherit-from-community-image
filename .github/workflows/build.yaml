@@ -39,7 +39,7 @@ jobs:
         REPO_DIR: /srv/repo
         #
         # Uncomment and modify the following line with your image name, otherwise no push will happen
-        # IMAGE_NAME: "<quay-username>/<repository-name>"
+        IMAGE_NAME: "yuvipanda/example-inherit-from-community-image"
 
     # Lets us monitor disks getting full as images get bigger over time
     - name: Show how much disk space is left
