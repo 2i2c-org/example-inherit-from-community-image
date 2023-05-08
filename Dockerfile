@@ -5,4 +5,4 @@ COPY environment.yml /tmp/environment.yml
 
 RUN mamba env update --prefix ${CONDA_DIR} --file /tmp/environment.yml
 
-COPY image-tests .
+COPY image-tests image-tests
