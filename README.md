@@ -12,7 +12,7 @@ image, and add the packages listed in `environment.yml` to it.
 2. All modifications happen in `environment.yml` file, which is not container specific. Regular users can use this too.
 3. Users can test out their image **interactively** by making a PR, which will automatically create a comment with a link to
    mybinder.org, which will build the image *exactly* the same way our action does. This allows users to contribute packages
-   and changes to this repo without needing docker installed locally.
+   and changes to this repo without needing docker installed locally. [See example PR](https://github.com/yuvipanda/example-inherit-from-community-image/pull/1)
 4. On making PRs, a GitHub action builds the image to make sure it can be built. This catches issues with syntax errors and
    missing versions.
 5. Tests inside the `image-tests/` directory are also run on each PR, allowing for more fine-grained tests - either as
