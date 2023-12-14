@@ -17,5 +17,5 @@ image, and add the packages listed in `environment.yml` to it.
    missing versions.
 5. Tests inside the `image-tests/` directory are also run on each PR, allowing for more fine-grained tests - either as
    `pytest` tests or as jupyter notebooks that must reproduce exactly. This helps catch issues with version upgrades breaking
-   your instructional code.
+   your instructional code. The tests are invoked as part of the [`jupyterhub/repo2docker` action](https://github.com/jupyterhub/repo2docker-action). See [here](https://github.com/jupyterhub/repo2docker-action#testing-the-built-image#testing-the-built-image) for more details.
 6. When a PR is merged, the image is built and pushed to [quay.io](https://quay.io/repository/yuvipanda/example-inherit-from-community-image?tab=info)
