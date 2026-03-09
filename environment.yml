@@ -2,9 +2,10 @@ channels:
   - conda-forge
 
 dependencies:
-  - jupyterhub-singleuser>=3.0,<4.0
-
-  # Everyone wants to use nbgitpuller for everything, so let's do that
+  # Include dependencies here that are *not* in the base image
+  # This can be pretty short
+  
+  # Everyone wants to use nbgitpuller for distributing content, so include that
   - nbgitpuller=1.1.*
   # Install packages from pip
   - pip
