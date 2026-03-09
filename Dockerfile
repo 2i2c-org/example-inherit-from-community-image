@@ -1,5 +1,5 @@
 # Inherit from an upstream image
-FROM jupyter/scipy-notebook:2023-05-01
+FROM quay.io/jupyter/scipy-notebook:2026-03-09 
 
 COPY environment.yml /tmp/environment.yml
 
